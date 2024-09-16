@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html5</title>
+</head>
+<body>
+    <h1>imagens dinâmicas</h1>   
+    <p>tente abrir esse site em varios dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width:750)" srcset="imagens\letra P.jpg" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens\img M.jpg" type="image/png">
+        <img src="/imagens/img G.jpg" alt="imagem flexivel" width="500" height="500">
+    </picture>
+    <h1>reproduzindo audio</h1>
+    <audio src="drop.mp3" preload="auto" controls >
+        <source src="drop.mp3" type="audio/mp3">
+    </audio>
+    <h1>reproduzindo videos</h1>
+    <video src="imagens\robloxapp-20220309-2240568.wmv"  preload="auto " controls autoplay>
+    </video>
+    <h1>inserindo videos externos </h1>
+    <iframe width="300" height="315" src="https://www.youtube.com/embed/2wIACHP04qQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
